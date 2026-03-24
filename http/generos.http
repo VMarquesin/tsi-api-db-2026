@@ -1,3 +1,25 @@
-@url = http://localhost::3000/generos
+@url = http://localhost:3000/generos
 
-    GET {{{url}}}
+GET {{url}}
+
+### buscar um gênero
+GET {{url}}/1
+
+### Criar um novo gênero
+POST {{url}}
+Content-Type: application/json
+
+{
+    "nome": "Ação"
+}
+
+### Atualizar um gênero
+PUT {{url}}/2
+Content-Type: application/json
+
+{
+    "nome": "Ficção Científica"
+}
+
+### Excluir um gênero
+DELETE {{url}}/3
