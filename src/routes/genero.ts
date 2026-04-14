@@ -1,5 +1,6 @@
 import { Router, type Request, type Response } from "express";
-import { db } from "../database/db";
+//import { db } from "../database/db";
+import { prisma } from "../prisma";
 import type { Genero } from "../model/Genero";
 
 const router = Router();
