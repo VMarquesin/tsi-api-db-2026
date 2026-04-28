@@ -1,5 +1,4 @@
 import express from "express";
-import "./database/db";
 import generosRouter from "./routes/genero";
 
 const app = express();
